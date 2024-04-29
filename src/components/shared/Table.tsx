@@ -66,7 +66,7 @@ const Table = (props: TableProps) => {
             ))}
           </thead>
           <tbody {...dataTable.getTableBodyProps()}>
-            {(rows || []).map((row: any, i: number) => {
+            {(rows || []).map((row: any, _i: number) => {
               dataTable.prepareRow(row)
               return (
                 <tr {...row.getRowProps()}>
